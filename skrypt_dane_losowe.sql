@@ -1,7 +1,7 @@
-
+use piotrogorzelski
 INSERT INTO [dbo].[Article]
            ([Name]
-           ,[InsertionTime]
+           ,[InsertedDate]
            )
    
 select top 100 n1.name + ' ' +n2.name +' '+ n3.name as Artykul,getdate()
@@ -63,7 +63,7 @@ INSERT INTO [dbo].[Price]
            ([PriceListID]
            ,[ArticleID]
            ,[Price]
-           ,[InsertionTime]
+           ,[InsertedDate]
            )
    
    
