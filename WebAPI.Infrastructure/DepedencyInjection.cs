@@ -11,12 +11,6 @@ namespace WebAPI.Infrastructure
 	{
 		public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
 		{
-			
-
-
-			//services.AddDbContext<RekrutacjaContext>(opts =>
-			//		opts.UseSqlServer(configuration.GetConnectionString("Rekrutacja")));
-
 	
 			services.AddScoped<IArticleService, ArticleService>();
 			services.AddScoped<IPriceService, PriceService>();
